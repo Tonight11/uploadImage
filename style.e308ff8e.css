@@ -1,0 +1,137 @@
+*, body, html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	display: flex;
+	
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.wrapper {
+	
+}
+
+.content {
+	margin-top: 100px;
+	background: rgb(181, 181, 181);
+	padding: 20px 60px;
+	max-width: 1250px;
+}
+
+.file {
+	display: none;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #fff;
+	outline: none;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 700;
+	border: 2px solid rgb(134, 115, 243);
+	padding: 15px 30px;
+	border-radius: 11px;
+	box-shadow: 0px 5px 10px rgba(134, 115, 243, .3);
+	cursor: pointer;
+
+	transition: box-shadow 0.3s linear;
+	
+}
+
+.btn-primary {
+	border: 2px solid rgb(115, 243, 126);
+	box-shadow: 0px 5px 10px rgba(115, 243, 126, .3);
+	margin-left: 25px;
+}
+
+.btn-primary:hover {
+	box-shadow: 0px 5px 10px rgba(115, 243, 126, .5);
+}
+
+.btn:hover {
+	box-shadow: 0px 5px 10px rgba(134, 115, 243, .5);
+}
+
+.preview {
+	margin-top: 30px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+
+.preview-item {
+	position: relative;
+	width: 350px;
+	height: 350px;
+
+	overflow: hidden;
+}
+
+.preview-item:hover .preview-close {
+	opacity: 1;
+	visibility: visible;
+}
+
+.preview-item:hover .preview-info {
+	transform: translateY(0);
+}
+
+.preview-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 1px solid #ffc04c;
+}
+
+.preview-close {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	background: rgb(100, 89, 89);
+	padding: 5px;
+	cursor: pointer;
+	border-bottom-left-radius: 11px;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all 0.5s linear;
+}
+
+.preview-info {
+	position: absolute;
+	bottom: 1px;
+	left: 1px;
+	right: 1px;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(100, 89, 89);
+	color: #000;
+	font-weight: 700;
+
+	transform: translateY(30px);
+
+	transition: all 0.5s linear;
+}
+
+.preview-bar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	background: rgb(29, 173, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
